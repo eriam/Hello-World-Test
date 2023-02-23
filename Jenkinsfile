@@ -13,7 +13,7 @@ pipeline {
       }
       steps {
         sh "composer update"
-        cp /.env ${workspace}/.env
+        sh "cp /.env ${workspace}/.env"
         sh "php artisan test"
       }
     }
