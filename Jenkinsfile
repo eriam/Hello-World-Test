@@ -20,7 +20,7 @@ pipeline {
     stage('Deploy') {
       agent {
         docker {
-          image 'centos-laravel:latest'
+          image 'debian-laravel-php8:latest'
           args '-v /etc/passwd:/etc/passwd -v /etc/group:/etc/group'
         }
       }
