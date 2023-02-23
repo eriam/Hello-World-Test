@@ -31,7 +31,7 @@ pipeline {
           sh "echo PASSWORD     = $PASSWORD"
           sh "echo WORKSPACE    = ${env.WORKSPACE}"
           sh "/usr/bin/sshpass -p $PASSWORD /usr/bin/scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -r ${env.WORKSPACE}/* $USERNAME@helloworld.schaffter.etu.lmdsio.fr:/private"
-          sh "/usr/bin/sshpass -p $PASSWORD /usr/bin/ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no $USERNAME@helloworld.schaffter.etu.lmdsio.fr 'cd /private ; composer update'"
+          sh "/usr/bin/sshpass -p $PASSWORD /usr/bin/ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no $USERNAME@helloworld.schaffter.etu.lmdsio.fr 'cd /private ; /usr/bin/php8.1 /usr/local/bin/composer update'"
         }
       }
     }
