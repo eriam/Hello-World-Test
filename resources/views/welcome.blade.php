@@ -20,6 +20,6 @@
       
       <br/>
       
-      From laravel
+      From the Laravel framework !
     </body>
 </html>
