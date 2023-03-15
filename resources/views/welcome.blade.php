@@ -17,5 +17,9 @@
     </head>
     <body class="antialiased">
       Hello World !
+      
+      <br/>
+      
+      From the Laravel framework !
     </body>
 </html>
