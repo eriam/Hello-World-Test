@@ -16,6 +16,6 @@
         </style>
     </head>
     <body class="antialiased">
-      Hello World !
+    Hello, {{ $name }} !
     </body>
 </html>
